@@ -488,9 +488,36 @@
             </p>  
           </div>
 
-      
       </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!--Error Experiments -->
+<section class="hero is-small is-white">
+  <div class="hero-body">
+    <div class="container">
+            <h2 class="title is-3">Error Analysis</h2>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+
+          <figure class="has-text-centered">
+            <img src="static/images/error_ana.png" alt="error_ana_experiment" style="width: 75%;">
+                   <figcaption class="subtitle is-size-6 has-text-centered" style="margin-top: 1rem;">
+              <strong>Table 3:</strong> The statistic of Error Rate(%) on AndroidWorld that D-Artemis failed to complete. Qwen2.5-VL-72B is used as both the baseline model and the foundational LLM backbone for D-Artemis. Method marked with "†" uses GUI-OWL-32B as backbone.
+            </figcaption>
+          </figure>
+
+          <div style="height: 3rem;"></div>
+
+          <div class="content has-text-justified">
+            <p>
+              For our error analysis, we examined the trajectories of failed tasks from each method. We then identified and classified each error according to the five predefined categories, noting that a single failed task can contain multiple errors. Finally, we calculated the proportional distribution of each error type relative to the total number of observed errors. The results of this analysis are presented in Table 3. Compared to the baseline, D-Artemis shows a substantial reduction in errors related to <em>Grounding</em> and <em>Navigation</em>, a result that directly reflects the architectural advantages of our framework. Notably, the majority of the remaining failures are now attributed to higher-level <em>Planning</em> and <em>Perception</em> errors. This suggests that while our framework effectively resolves issues of execution and guidance, the final performance is still bound by the inherent, end-to-end reasoning limitations of the underlying base model.
+            </p>  
+          </div>
+
+      
     </div>
   </div>
 </section>
