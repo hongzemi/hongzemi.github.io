@@ -447,6 +447,8 @@
       <strong>Figure 1:</strong> Ablation study on AndroidWorld.
     </figcaption>
   </figure>
+
+          <hr style="height: 1px; background-color: #e0e0e0; border: none; margin: 4rem auto; width: 80%;">
           
           <div class="content has-text-justified">
             <p>
@@ -456,20 +458,8 @@
               The ablation study demonstrates a tiered performance gain: adding the ACA alone improves the success rate by 8.6%, and further introducing the TAC Check module increases the total gain to 22.4%. The initial gain stems from improved execution efficiency, while the larger boost from the TAC module highlights its dual function as both an effective error filter and a safeguard against incorrect modifications. As shown in Figure~\ref{fig:ablation_2}, removing the entire pre-execution alignment mechanism leads to a significant drop in performance, which highlights its importance to the framework. Furthermore, the significant performance drop observed upon removing action visualization demonstrates the visual information is crucial in the design.
             </p>  
           </div>
-          
-  <hr style="height: 1px; background-color: #e0e0e0; border: none; margin: 4rem auto; width: 80%;">
+        
 
-      <div class="content has-text-justified">
-            <p>
-              <strong>ScreenSpot-V2.</strong> As detailed in Table 2, D-Artemis demonstrates exceptional performance on the ScreenSpot-V2 benchmark. It achieves a 97.9% average success rate, surpassing the previous SOTA, UI-Venus-Ground-72B. The ability of Pre-execution Alignment to effectively correct the grounding of UI elements is demonstrated by its performance on the more challenging “Icon/Widget" tasks, where it reaches 95.6%. Crucially, D-Artemis outperforms its own base model, Qwen2.5-VL-72B, by a significant 4.1%. Our analysis reveals that pre-execution alignment significantly improves UI element grounding in common scenarios by proactively correcting flawed actions, demonstrating the overall effectiveness of our framework.
-            </p>
-          </div>
-        <figure class="has-text-centered">
-    <img src="static/images/V2.jpg" alt="androidworld_experiment" style="width: 65%;">
-           <figcaption class="subtitle is-size-6 has-text-centered" style="margin-top: 1rem;">
-      <strong>Table 2:</strong> Success Rate (%) on the Mobile Subset of the ScreenSpot-V2 Benchmark. D-Artemis utilizes Qwen2.5-VL-72B as the backbone model.
-    </figcaption>
-  </figure>
       
       </div>
       </div>
