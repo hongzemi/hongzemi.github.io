@@ -361,7 +361,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Graphical User Interface (GUI) agents aim to automate a wide spectrum of human tasks by emulating user interaction. Despite rapid advancements, current approaches are hindered by several critical challenges: data bottleneck in end-to-end training, high cost of delayed error detection, and risk of contradictory guidance. Inspired by the human cognitive loop of Thinking, Alignment, and Reflection, we present D-Artemis—a novel deliberative framework in this paper. D-Artemis leverages a fine-grained, app-specific tip retrieval mechanism to inform its decision-making process. It also employs a proactive Pre-execution Alignment stage, where Thought-Action Consistency (TAC) Check module and Action Correction Agent (ACA) work in concert to mitigate the risk of execution failures. A post-execution Status Reflection Agent (SRA) completes the cognitive loop, enabling strategic learning from experience. Crucially, D-Artemis enhances the capabilities of general-purpose Multimodal large language models (MLLMs) for GUI tasks without the need for training on complex trajectory datasets, demonstrating strong generalization. D-Artemis establishes new state-of-the-art (SOTA) results across both major benchmarks, achieving a 75.8\% success rate on AndroidWorld and 96.8\% on ScreenSpot-V2. Extensive ablation studies further demonstrate the significant contribution of each component to the framework.
+            Graphical User Interface (GUI) agents aim to automate a wide spectrum of human tasks by emulating user interaction. Despite rapid advancements, current approaches are hindered by several critical challenges: data bottleneck in end-to-end training, high cost of delayed error detection, and risk of contradictory guidance. Inspired by the human cognitive loop of Thinking, Alignment, and Reflection, we present D-Artemis—a novel deliberative framework in this paper. D-Artemis leverages a fine-grained, app-specific tip retrieval mechanism to inform its decision-making process. It also employs a proactive Pre-execution Alignment stage, where Thought-Action Consistency (TAC) Check module and Action Correction Agent (ACA) work in concert to mitigate the risk of execution failures. A post-execution Status Reflection Agent (SRA) completes the cognitive loop, enabling strategic learning from experience. Crucially, D-Artemis enhances the capabilities of general-purpose Multimodal large language models (MLLMs) for GUI tasks without the need for training on complex trajectory datasets, demonstrating strong generalization. D-Artemis establishes new state-of-the-art (SOTA) results across both major benchmarks, achieving a 75.8% success rate on AndroidWorld and 96.8% on ScreenSpot-V2. Extensive ablation studies further demonstrate the significant contribution of each component to the framework.
           </p>
         </div>
       </div>
@@ -369,6 +369,21 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<!-- Method -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+            <h2 class="title is-3">D-Artemis framework</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+                    <img src="static/images/framework.jpg" alt="Overview of the D-Artemis framework. (a) The manager agent is guided by two input modalities: textual (task, tips, working memory) and visual (screenshot only). (b) Pre-execution, TAC Check module verifies thought-action consistency. (c) A low consistency score triggers the Action Correction Agent (ACA) to analyze the error type and rectify the action. (d) Post-execution, the Status Reflection Agent (SRA) assesses the action effectiveness and the environmental state to produce guidance for the next step. Upon completion of each step, the working memory is updated.">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 <!-- Image carousel -->
