@@ -458,8 +458,6 @@
               The ablation study demonstrates a tiered performance gain: adding the ACA alone improves the success rate by 8.6%, and further introducing the TAC Check module increases the total gain to 22.4%. The initial gain stems from improved execution efficiency, while the larger boost from the TAC module highlights its dual function as both an effective error filter and a safeguard against incorrect modifications. As shown in Figure 1, removing the entire pre-execution alignment mechanism leads to a significant drop in performance, which highlights its importance to the framework. Furthermore, the significant performance drop observed upon removing action visualization demonstrates the visual information is crucial in the design.
             </p>  
           </div>
-
-          <hr style="height: 1px; background-color: #e0e0e0; border: none; margin: 4rem auto; width: 80%;">
           
           <div class="content has-text-justified">
             <p>
@@ -467,6 +465,24 @@
             </p>
             <p>
               The effectiveness of the SRA is quantified in Figure 1. On the baseline model, its inclusion yields a 3.8 % performance gain. This effect is significantly amplified within the D-Artemis framework, where the agent contributes 15.9% improvement. This highlights its dual capability to enhance perception of environmental changes and to provide effective guidance that informs the decision-making process.
+            </p>  
+          </div>
+
+          <hr style="height: 1px; background-color: #e0e0e0; border: none; margin: 4rem auto; width: 80%;">
+
+          <figure class="has-text-centered">
+            <img src="static/images/TIPS_ablution.png" alt="tips_experiment" style="width: 75%;">
+                   <figcaption class="subtitle is-size-6 has-text-centered" style="margin-top: 1rem;">
+              <strong>Figure 2:</strong> Success rates of different tip guidance strategies across AndroidWorld applications.
+            </figcaption>
+          </figure>
+
+          <div class="content has-text-justified">
+            <p>
+              <strong>Tip Retrieval mechanism improves the decision-making ability of agent by minimizing conflicting guidance.</strong> 
+            </p>
+            <p>
+              As detailed in Figure 1, integrating the tip retrieval mechanism yields a significant 6.9% performance gain for D-Artemis. This improvement is particularly noteworthy because the base D-Artemis framework is already adept at accurately translating a given thought into its corresponding action. Therefore, this gain stems from the enhanced decision-making capabilities conferred by the task-specific tips. To further evaluate our app-specific tip retrieval strategy, we conduct a comparative study against two baseline strategies (as shown in Figure 2): (1) "without tips" baseline, which uses no external guidance, and (2) "mixed tips" baseline, which provides a generic, heterogeneous mixture of tips from different applications. Our results reveal that providing the agent with a generic mixture of tips is often worse than providing no tips at all. This highlights a critical flaw in untargeted guidance: the introduction of noisy and logically conflicting information can paradoxically degrade, rather than improve, the decision-making process of the agent. This outcome, which is contrary to the very purpose of providing tips, validates the need for our tip retrieval strategy.
             </p>  
           </div>
 
